@@ -14,5 +14,12 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
 
+  rabbitmq:
+    addresses: fuji.lmq.cloudamqp.com
+    port: 5671
+    username: xtsqmruw
+    password: tu7QGiH11sOeNDrbxRZf6xrnc_FjBAkh
+    virtual-host: xtsqmruw
+
 server:
   port: 8081

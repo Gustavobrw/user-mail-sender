@@ -10,6 +10,7 @@ public class EmailConsumer {
 
     @RabbitListener(queues = "email-queue")
     public void listenEmailQueue(@Payload EmailDto emailDto) {
-        System.out.println("Consumindo mensagem: " + emailDto.emailTo());
+        System.out.println("Consumindo mensagem: ");
+        System.out.println(emailDto);
     }
 }
