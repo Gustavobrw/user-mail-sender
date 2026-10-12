@@ -28,7 +28,7 @@ public class EmailService {
         try {
             SimpleMailMessage message = new SimpleMailMessage();
             message.setFrom(mailFrom);
-            message.setTo(emailModel.getTo());
+            message.setTo(emailModel.getEmailTo());
             message.setSubject(emailModel.getEmailSubject());
             message.setText(emailModel.getBody());
             mailSender.send(message);
